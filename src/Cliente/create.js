@@ -1,4 +1,4 @@
-import { PrismaClient } from "@prisma/client";
+const { PrismaClient } = require('@prisma/client')
 
 
 const prisma = new PrismaClient();
@@ -7,10 +7,10 @@ const prisma = new PrismaClient();
 async function main() {
   const result = await prisma.cliente.create({
     data: {
-      name: "Cristin",
+      name: "Alec",
       fullname: 'Cesar',
-      cpf: "888-144-222-78",
-      adress: "Rua dos Marinheiros"
+      cpf: "999-888-777-77",
+      adress: "Rua do Nada"
     },
   });
 
